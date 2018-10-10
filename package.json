@@ -1,11 +1,11 @@
 {
-  "name": "eaglejs-example",
-  "version": "0.2.0",
-  "description": "Example presentation with Eagle.js",
-  "author": "Zulko",
+  "name": "slides-ruhrjs2018",
+  "version": "0.1.0",
+  "description": "Slideshow for talk 'Highly dynamic apps with Vue.js' at RuhrJS 2018",
+  "author": "NoFrank",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zulko/eaglejs-demo.git"
+    "url": "https://github.com/NoFrank/slides-ruhrjs2018"
   },
   "license": "ISC",
   "scripts": {

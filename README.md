@@ -1,18 +1,17 @@
-# Slideshow "Highly dynamic apps with Vue.js", RuhrJS
+# Slideshow "Highly dynamic apps with Vue.js", RuhrJS 2018
 
-The slideshow is build with eagly-js.
+The slideshow is build with [Eagle.js](https://github.com/Zulko/eagle.js).
 
-This folder/repo contains the source of a demo Eagle.JS webpage featuring a few slideshows. [Here is the page in action](https://zulko.github.io/eaglejs-demo/#/).
 
 To get started, download the zip of this repo or clone it with:
 ``` bash
-git clone https://github.com/Zulko/eaglejs-demo.git
+git clone https://github.com/NoFrank/slides-ruhrjs2018
 ```
 
 Install the dependencies (they will only be downloaded in a local folder):
 ```bash
-cd eaglejs-demo
+cd slides-ruhrjs2018
 npm install
 ```
 
-Then run ```npm run dev``` to start the server, and open your browser at [http://localhost:8080](http://localhost:8080) to see the slideshow.
+Then run ```npm run serve``` to start the server, and open your browser at [http://localhost:8080](http://localhost:8080) to see the slideshow.
