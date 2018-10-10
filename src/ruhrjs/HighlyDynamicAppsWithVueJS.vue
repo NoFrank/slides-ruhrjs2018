@@ -284,14 +284,24 @@
           <p v-if="step >= 5">Learn from common UI-libraries, how they implement generic features</p>
         </eg-transition>
         <eg-transition enter="fadeInLeft">
-          <p v-if="step >= 6">Exciting stuff to come with 3.0:
-            <a class="green" style="font-size:0.7em;display:block;"
+          <p v-if="step >= 6">
+            Exciting stuff to come with 3.0:
+            <a
+              class="green"
+              style="font-size:0.7em;display:block;"
               href="https://medium.com/the-vue-point/plans-for-the-next-iteration-of-vue-js-777ffea6fabf"
             >https://medium.com/the-vue-point/plans-for-the-next-iteration-of-vue-js-777ffea6fabf</a>
           </p>
         </eg-transition>
         <eg-transition enter="fadeInLeft">
-          <p v-if="step >= 7">Slides of this talk at:</p>
+          <p v-if="step >= 7">
+            Slides of this talk at:
+            <a
+              class="green"
+              style="font-size:0.7em;display:block;"
+              href="https://github.com/NoFrank/slides-ruhrjs2018"
+            >https://github.com/NoFrank/slides-ruhrjs2018</a>
+          </p>
         </eg-transition>
         <eg-transition enter="fadeInLeft">
           <p v-if="step >= 8">EOT (end of talk) 😀</p>

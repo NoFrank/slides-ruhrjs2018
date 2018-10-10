@@ -3,6 +3,7 @@ import App from "./App";
 
 import Eagle, { Options } from "eagle.js";
 import "eagle.js/dist/eagle.css";
+import "animate.css/animate.min.css";
 import hljs from "highlight.js";
 
 /* eslint-disable no-new */
