@@ -16,7 +16,7 @@
           </eg-transition>
           <eg-transition enter="bounceInRight" leave="bounceOutRight">
             <p v-if="step >= 3">
-              <span class="green">@norbertdfrank</span>
+              <span class="green">@norbertdfrank&nbsp;</span>
               <span class="orange tags">#JSEnthusiast #BornInHamburg
                 <br>#WorksForLucom #SoftwareEngineer #SoftwareArchitect #MobileDev
                 <br>#Consultant #InterestedInMoreThingsThanThereIsTime #Finfluence
@@ -64,7 +64,7 @@
           <div class="third" v-if="step >= 4">
             <img src="./assets/Vue_logo.svg">
             <div>
-              <p>Vue rendering app interpretes JSON-schema and renders form</p>
+              <p>Vue rendering app interpretes JSON-data and renders form</p>
             </div>
           </div>
         </eg-transition>
@@ -106,14 +106,14 @@
           <p v-if="step >= 9">Small core team of independent developers</p>
         </eg-transition>
       </slide>
-      <slide enter="rollIn" leave="fadeOut">
+      <!--<slide enter="rollIn" leave="fadeOut">
         <h3
           class="green"
           style="font-size: 1.6em;margin-top: 30vh;"
         >"Components are reusable Vue instances with a name"</h3>
         <p style="font-size: 0.5em;margin-left: 6vw;">https://vuejs.org/v2/guide/components.html</p>
       </slide>
-      <!--<slide enter="bounceInRight" leave="fadeOut" :steps="9">
+      <slide enter="bounceInRight" leave="fadeOut" :steps="9">
         <h4 class="slide-header">Components</h4>
         <div style="font-size:0.8em;">
           <eg-transition enter="fadeInLeft">
@@ -197,35 +197,27 @@
           <p v-if="step >= 2">Let's see..</p>
         </eg-transition>
       </slide>
-      <slide enter="bounceInRight" leave="fadeOut" :steps="10">
+      <slide enter="bounceInRight" leave="fadeOut" :steps="6">
         <h4 class="slide-header">The architect's toolset</h4>
         <div style="font-size:0.8em;">
           <eg-transition enter="fadeInLeft">
             <p v-if="step >= 2">Mixins: yes, Vue.js has them</p>
+            <p v-if="step >= 2">Extend: extend a base component</p>
           </eg-transition>
           <eg-transition enter="fadeInLeft">
             <p v-if="step >= 3">Plugins: simple plugin API</p>
+            <p v-if="step >= 3">Animations: built-in features to control animations</p>
           </eg-transition>
           <eg-transition enter="fadeInLeft">
-            <p v-if="step >= 4">Animations: built-in features to control animations</p>
+            <p v-if="step >= 4">Slots / Scoped Slots: placeholder in generic components</p>
+            <p v-if="step >= 4">Dependency Injection: provide/inject along the component hierarchy</p>
           </eg-transition>
           <eg-transition enter="fadeInLeft">
-            <p v-if="step >= 5">Slots / Scoped Slots: placeholder in generic components</p>
+            <p v-if="step >= 5">Directives: attach generic behaviour to any component</p>
+            <p v-if="step >= 5">Filters: format output</p>
           </eg-transition>
           <eg-transition enter="fadeInLeft">
-            <p v-if="step >= 6">Directives: attach generic behaviour to any component</p>
-          </eg-transition>
-          <eg-transition enter="fadeInLeft">
-            <p v-if="step >= 7">Extend: extend a base component</p>
-          </eg-transition>
-          <eg-transition enter="fadeInLeft">
-            <p v-if="step >= 8">Dependency Injection: provide/inject along the component hierarchy</p>
-          </eg-transition>
-          <eg-transition enter="fadeInLeft">
-            <p v-if="step >= 9">Filters: format output</p>
-          </eg-transition>
-          <eg-transition enter="fadeInLeft">
-            <p v-if="step >= 10">Component-component: decide dynamically which component to use</p>
+            <p v-if="step >= 6">Component-component: decide dynamically which component to use</p>
           </eg-transition>
         </div>
       </slide>
@@ -245,7 +237,7 @@
           </div>
           <eg-transition enter="fadeIn">
             <p v-if="step >= 2">
-              General approach:
+              Generic approach:
               <span class="green">https://github.com/jackmellis/vue-hoc</span>
             </p>
           </eg-transition>
@@ -267,8 +259,15 @@
           </div>
         </div>
       </slide>
-      <slide enter="bounceInRight" leave="fadeOut" :steps="8">
+      <slide enter="bounceInRight" leave="fadeOut">
+        <h4 class="slide-header">Some examples</h4>
+        <p>Dynamic recursive component tree</p>
+        <p>Generic input component with dynamic binding to a Vuex store</p>
+        <p>Dynamic Vuex module to validate a set of properties</p>
+      </slide>
+      <slide enter="bounceInRight" leave="fadeOut" :steps="9">
         <h4 class="slide-header">Take aways</h4>
+        <div style="font-size:0.8em;">
         <eg-transition enter="fadeInLeft">
           <p
             v-if="step >= 2"
@@ -295,7 +294,7 @@
         </eg-transition>
         <eg-transition enter="fadeInLeft">
           <p v-if="step >= 7">
-            Slides of this talk at:
+            Slides of this talk:
             <a
               class="green"
               style="font-size:0.7em;display:block;"
@@ -304,8 +303,19 @@
           </p>
         </eg-transition>
         <eg-transition enter="fadeInLeft">
-          <p v-if="step >= 8">EOT (end of talk) 😀</p>
+          <p v-if="step >= 8">
+            Sample implementation of various concepts:
+            <a
+              class="green"
+              style="font-size:0.7em;display:block;"
+              href="https://github.com/NoFrank/vue-life-planner"
+            >https://github.com/NoFrank/vue-life-planner</a>
+          </p>
         </eg-transition>
+        <eg-transition enter="fadeInLeft">
+          <p v-if="step >= 9">EOT (end of talk) 😀</p>
+        </eg-transition>
+        </div>
       </slide>
     </div>
     <div class="fixed-border"></div>
